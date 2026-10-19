@@ -1,10 +1,11 @@
-// Einfache Passwort-Sperre (einmal richtig eingeben, dann merkt sich das Gerät es)
+// Einfache Passwort-Sperre (gilt, solange die App/der Tab offen ist; nach Neustart wird neu gefragt)
 (function () {
   if (typeof PASSWORT === "undefined" || !PASSWORT) return;
 
   const KEY = "fuer-dich-entsperrt";
+  try { localStorage.removeItem(KEY); } catch (e) {} // alte Merkung früherer Version löschen
   try {
-    if (localStorage.getItem(KEY) === "1") return;
+    if (sessionStorage.getItem(KEY) === "1") return;
   } catch (e) { /* Speicher gesperrt: Sperre bei jedem Besuch */ }
 
   document.documentElement.classList.add("gesperrt");
@@ -30,7 +31,7 @@
     document.getElementById("sperre-form").addEventListener("submit", function (e) {
       e.preventDefault();
       if (input.value.trim().toLowerCase() === String(PASSWORT).trim().toLowerCase()) {
-        try { localStorage.setItem(KEY, "1"); } catch (err) {}
+        try { sessionStorage.setItem(KEY, "1"); } catch (err) {}
         document.documentElement.classList.remove("gesperrt");
         box.remove();
       } else {
