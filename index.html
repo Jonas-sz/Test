@@ -10,28 +10,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main id="app">
-    <!-- Wird von script.js befüllt -->
-    <section id="countdown" hidden>
-      <h1>Noch nicht ganz …</h1>
-      <p id="countdown-text"></p>
+  <main>
+    <header class="hero">
+      <h1>Für <span id="name"></span></h1>
+      <p>Wir zwei, in Zahlen</p>
+    </header>
+
+    <section aria-live="polite">
+      <p class="big-number" id="tage-zusammen">0</p>
+      <p class="big-label" id="tage-label">Tage zusammen</p>
+      <p class="small-line" id="stunden-zusammen"></p>
     </section>
 
-    <section id="day" hidden>
-      <p id="day-label"></p>
-      <figure class="polaroid">
-        <img id="day-image" alt="">
-        <figcaption id="day-caption"></figcaption>
-      </figure>
-      <p id="day-text"></p>
-      <nav>
-        <button id="prev" aria-label="Voriger Tag">‹ Gestern</button>
-        <button id="next" aria-label="Nächster Tag">Weiter ›</button>
-      </nav>
+    <section class="cards">
+      <div class="card">
+        <p class="kicker">Bis zu deinem Geburtstag</p>
+        <p class="num" id="bis-geburtstag">–</p>
+        <p class="sub" id="geburtstag-sub"></p>
+      </div>
+      <div class="card">
+        <p class="kicker">Bis zu unserem Jahrestag</p>
+        <p class="num" id="bis-jahrestag">–</p>
+        <p class="sub" id="jahrestag-sub"></p>
+      </div>
+      <div class="card">
+        <p class="kicker">Nächster Meilenstein</p>
+        <p class="num" id="bis-meilenstein">–</p>
+        <p class="sub" id="meilenstein-sub"></p>
+      </div>
     </section>
+
+    <button id="herz" aria-label="Überraschungs-Satz anzeigen">♥</button>
+    <p id="herz-text">Tipp aufs Herz.</p>
+
+    <a class="cta" href="tage.html">Zu deinen Tagen ›</a>
   </main>
 
-  <script src="eintraege.js"></script>
-  <script src="script.js"></script>
+  <script src="config.js"></script>
+  <script src="start.js"></script>
 </body>
 </html>

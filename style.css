@@ -96,3 +96,80 @@ button:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
 button:disabled { opacity: 0.3; cursor: default; }
 
 [hidden] { display: none !important; }
+
+/* ===== Startseite ===== */
+.back {
+  display: inline-block;
+  font-family: "Caveat", cursive;
+  font-size: 1.4rem;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.hero { margin: 8vh 0 28px; }
+.hero h1 { margin: 0 0 4px; }
+.hero p { margin: 0; color: var(--accent); font-family: "Caveat", cursive; font-size: 1.6rem; }
+
+.big-number {
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 18px 0 0;
+}
+.big-label { font-family: "Caveat", cursive; font-size: 1.8rem; color: var(--accent); margin: 0 0 6px; }
+.small-line { opacity: 0.75; font-size: 0.95rem; margin: 0 0 32px; }
+
+.cards { display: grid; gap: 14px; margin-bottom: 28px; }
+.card {
+  background: var(--paper);
+  color: var(--ink);
+  padding: 14px 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+}
+.card:nth-child(odd) { transform: rotate(-1.2deg); }
+.card:nth-child(even) { transform: rotate(1deg); }
+.card .kicker { font-family: "Caveat", cursive; font-size: 1.4rem; margin: 0; }
+.card .num { font-family: "Caveat", cursive; font-weight: 700; font-size: 3rem; line-height: 1.1; margin: 0; }
+.card .sub { margin: 0; font-size: 0.9rem; opacity: 0.7; }
+
+#herz {
+  font-size: 3.4rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--accent);
+  transition: transform 0.15s;
+}
+#herz:hover { background: none; }
+#herz:active { transform: scale(1.25); }
+#herz-text { min-height: 3.4em; font-style: italic; margin: 6px auto 28px; max-width: 34ch; }
+
+.cta {
+  display: inline-block;
+  font-family: "Caveat", cursive;
+  font-size: 1.6rem;
+  color: var(--text);
+  text-decoration: none;
+  border: 1.5px solid var(--accent);
+  border-radius: 999px;
+  padding: 8px 28px;
+}
+.cta:hover { background: var(--accent); color: var(--ink); }
+
+.floating-heart {
+  position: fixed;
+  pointer-events: none;
+  font-size: 1.6rem;
+  animation: floatUp 1.6s ease-out forwards;
+  z-index: 10;
+}
+@keyframes floatUp {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to { opacity: 0; transform: translateY(-140px) scale(1.5); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .floating-heart { animation: none; opacity: 0; }
+}

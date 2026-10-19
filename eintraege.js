@@ -1,6 +1,6 @@
 // ===== EINSTELLUNGEN =====
 // Ihr Geburtstag = Tag 1 (Format: JJJJ-MM-TT)
-const START_DATUM = "2026-10-19";
+const START_DATUM = "2026-12-24";
 
 // ===== EINTRÄGE =====
 // Einer pro Tag, in der Reihenfolge. Bilder in den Ordner "bilder/" legen.
