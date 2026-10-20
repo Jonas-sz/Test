@@ -1,7 +1,7 @@
 // Service Worker: Netzwerk zuerst (immer aktuelle Inhalte), Cache als Offline-Reserve
-const CACHE = "fuer-dich-v2";
+const CACHE = "fuer-dich-v3";
 const GRUNDDATEIEN = [
-  "./", "index.html", "tage.html", "style.css",
+  "./", "index.html", "tage.html", "spiele.html", "liebst-du-mich.html", "style.css",
   "config.js", "gate.js", "eintraege.js", "start.js", "script.js",
   "icons/icon-192.png", "icons/icon-512.png"
 ];

@@ -210,3 +210,24 @@ html.gesperrt main { display: none; }
 }
 #sperre-pw:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 #sperre-fehler { min-height: 1.6em; color: var(--accent); margin: 10px 0 14px; }
+
+/* ===== Antwort, Spiele ===== */
+#antwort-btn { margin: -12px 0 28px; }
+#day-antwort { font-family: "Caveat", cursive; font-size: 1.9rem; color: var(--accent); margin: -12px 0 28px; }
+.ctas { display: grid; gap: 14px; justify-items: center; margin-top: 8px; }
+.cta + .cta { margin-top: 12px; }
+
+/* Ja/Nein-Spiel */
+.frage-gross { font-family: "Caveat", cursive; font-size: 3.2rem; margin: 14vh 0 36px; line-height: 1.1; }
+#ja {
+  font-size: 2.6rem; padding: 14px 64px; color: var(--ink); background: #3fbf6b;
+  border: none; border-radius: 999px; animation: leuchten 1.4s ease-in-out infinite;
+}
+#ja:hover { background: #55d682; color: var(--ink); }
+@keyframes leuchten {
+  0%, 100% { box-shadow: 0 0 10px 2px rgba(63, 191, 107, 0.55); }
+  50% { box-shadow: 0 0 34px 12px rgba(63, 191, 107, 0.95); }
+}
+#nein { position: fixed; left: 50%; bottom: 14vh; transform: translateX(-50%); z-index: 5; padding: 2px 12px; }
+#richtig { font-family: "Caveat", cursive; font-size: 3rem; color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { #ja { animation: none; box-shadow: 0 0 24px 6px rgba(63, 191, 107, 0.8); } }
