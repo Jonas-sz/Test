@@ -31,14 +31,19 @@
   }
 
   const img = $("day-image");
+  let kandidaten = [], ki = 0;
   img.addEventListener("error", function () {
-    if (!img.dataset.fallback) { img.dataset.fallback = "1"; img.src = platzhalter(aktuell + 1); }
+    if (ki < kandidaten.length) { img.src = kandidaten[ki++]; }
+    else if (!img.dataset.fallback) { img.dataset.fallback = "1"; img.src = platzhalter(aktuell + 1); }
   });
 
   function zeige(index) {
     const e = EINTRAEGE[index];
     $("day-label").textContent = "Tag " + (index + 1) + (e.typ ? " · " + e.typ : "");
     delete img.dataset.fallback;
+    // Falls die Endung anders ist (.jpeg, .png, .JPG ...), werden diese der Reihe nach probiert
+    const basis = e.bild.replace(/\.[^./]+$/, "");
+    kandidaten = [".jpeg", ".png", ".JPG", ".JPEG", ".PNG", ".webp"].map((x) => basis + x); ki = 0;
     img.src = e.bild;
     img.alt = e.bildtext || "";
     $("day-caption").textContent = e.bildtext || "";
