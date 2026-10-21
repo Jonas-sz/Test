@@ -17,6 +17,8 @@
 
   const maxIndex = Math.min(tageSeitStart, EINTRAEGE.length - 1);
   let aktuell = maxIndex;
+  const wunsch = parseInt(new URLSearchParams(location.search).get("tag"), 10);
+  if (wunsch) aktuell = Math.min(maxIndex, Math.max(0, wunsch - 1));
 
   // Platzhalter-Bild, falls noch kein Foto hochgeladen ist
   function platzhalter(n) {
@@ -45,6 +47,10 @@
     ant.hidden = true;
     ant.textContent = e.antwort || "";
     btn.hidden = !e.antwort;
+    const sid = spielIdFuerTag(index + 1), sl = $("spiel-link");
+    sl.href = "spiel.html?id=" + sid + "&tag=" + (index + 1);
+    sl.textContent = "Tagesspiel: " + SPIELE[sid].typ + (FS.get().indexOf(sid) >= 0 ? " ✓" : " ›");
+    sl.hidden = false;
     $("prev").disabled = index === 0;
     $("next").disabled = index === maxIndex;
   }

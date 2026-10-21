@@ -15,17 +15,20 @@
   <link rel="stylesheet" href="style.css">
   <script src="config.js"></script>
   <script src="gate.js"></script>
+  <script src="fortschritt.js"></script>
 </head>
 <body>
   <main>
-    <a class="back" href="spiele.html">‹ Spiele</a>
-    <h1 class="frage-gross">Liebst du mich?</h1>
+    <a class="back" href="archiv.html">‹ Rückblick</a>
+    <h1 class="frage-gross" id="frage">Liebst du mich?</h1>
     <button id="ja">JA</button>
     <p id="richtig" hidden>Richtige Antwort ♥</p>
   </main>
   <button id="nein">Nein</button>
   <script>
     (function () {
+      var P = new URLSearchParams(location.search);
+      if (P.get("f")) document.getElementById("frage").textContent = P.get("f");
       var nein = document.getElementById("nein"), ja = document.getElementById("ja");
       var skala = 1, bewegt = false;
       function ueberlappt(a, b) {
@@ -46,6 +49,7 @@
       });
       ja.addEventListener("click", function () {
         nein.hidden = true; ja.hidden = true;
+        if (P.get("id") !== null) FS.add(+P.get("id"));
         document.getElementById("richtig").hidden = false;
         for (var k = 0; k < 24; k++) {
           var h = document.createElement("span");

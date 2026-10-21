@@ -231,3 +231,22 @@ html.gesperrt main { display: none; }
 #nein { position: fixed; left: 50%; bottom: 14vh; transform: translateX(-50%); z-index: 5; padding: 2px 12px; }
 #richtig { font-family: "Caveat", cursive; font-size: 3rem; color: var(--accent); }
 @media (prefers-reduced-motion: reduce) { #ja { animation: none; box-shadow: 0 0 24px 6px rgba(63, 191, 107, 0.8); } }
+
+/* ===== Tagesspiele und Rückblick ===== */
+h2 { font-family: "Caveat", cursive; font-size: 2rem; color: var(--accent); margin: 28px 0 10px; }
+.spiel-frage { font-family: "Caveat", cursive; font-size: 2.2rem; line-height: 1.2; white-space: pre-line; margin: 5vh 0 20px; }
+.opts { display: grid; gap: 12px; }
+.opts button, .mem button { font-size: 1.5rem; }
+.opts button.richtig, .mem button.richtig { background: #3fbf6b; border-color: #3fbf6b; color: var(--ink); }
+.mem { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.mem button { padding: 14px 0; font-size: 2rem; border-radius: 14px; }
+.mem button:disabled { opacity: 1; }
+.feld { position: relative; height: 50vh; border: 1.5px dashed var(--accent); border-radius: 16px; overflow: hidden; }
+.herz { position: absolute; font-size: 2.6rem; background: none; border: none; padding: 0; color: var(--accent); }
+.herz:hover:not(:disabled) { background: none; color: var(--accent); }
+.spiel-eingabe { font: inherit; font-size: 1.3rem; text-align: center; border: none; border-radius: 10px; padding: 10px; margin: 8px 8px 12px 0; width: min(70%, 220px); }
+.ergebnis { font-family: "Caveat", cursive; font-size: 2.4rem; color: var(--accent); margin-top: 24px; }
+.chips { display: grid; gap: 8px; text-align: left; margin-bottom: 20px; }
+.chip { display: block; padding: 10px 16px; border: 1.5px solid var(--accent); border-radius: 12px; color: var(--text); text-decoration: none; }
+.chip:hover { background: var(--accent); color: var(--ink); }
+#spiel-link { margin-top: 20px; }
