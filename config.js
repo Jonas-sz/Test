@@ -13,9 +13,10 @@ const NAME = "dich";
 const HERZ_SPRUECHE = [
   "Du machst jeden Tag besser.",
   "Mit dir wird sogar Warten schön.",
-  "Platzhalter: hier kommt ein Insider von euch.",
-  "Platzhalter: noch ein persönlicher Satz.",
-  "Ich freu mich auf alles, was noch kommt."
+  "Ich hoffe dir geht es guuuuttttt.",
+  "Die beste Zeit den Baum zu pflanzen ist heute.",
+  "Ich freu mich auf alles, was noch kommt.",
+  "Ich liebe dichhhhhhhhhh!!!!!!!!!."
 ];
 
 // Passwort für die Seite (leer lassen = kein Schutz)
