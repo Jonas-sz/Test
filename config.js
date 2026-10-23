@@ -21,4 +21,4 @@ const HERZ_SPRUECHE = [
 
 // Passwort für die Seite (leer lassen = kein Schutz)
 // Hinweis: Sperre gegen neugierige Blicke, kein echter Schutz (Repo ist öffentlich)
-const PASSWORT = "1234";
+const PASSWORT = "DUBISTMEINEWELT";
