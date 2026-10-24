@@ -1,5 +1,5 @@
 // ===== EINSTELLUNG =====
-const START_DATUM = "2026-10-23"; // Tag 1 = ihr Geburtstag (JJJJ-MM-TT)
+const START_DATUM = "2026-10-24"; // Tag 1 = ihr Geburtstag (JJJJ-MM-TT)
 
 // ===== TEXT-POOLS (Startmaterial, gern durch Eigenes ersetzen) =====
 const GRUENDE = [
