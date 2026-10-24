@@ -4,7 +4,7 @@
 const ZUSAMMEN_SEIT = "2024-04-24";
 
 // Ihr Geburtstag (Geburtsjahr egal, nur Monat und Tag zählen)
-const GEBURTSTAG = "2005-10-20";
+const GEBURTSTAG = "2005-10-24";
 
 // Name auf der Startseite
 const NAME = "meine Sarah❤️";
