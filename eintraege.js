@@ -63,7 +63,7 @@ const RAETSEL = [
 
 // ===== BESONDERE TAGE (mit Platzhaltern, bitte persönlich ausfüllen) =====
 const BESONDERE_TAGE = {
-  1:   { typ: "Geburtstag", bildtext: "Alles Gute!", text: "Alles Gute zum Geburtstag!\n\n[Dein persönlicher Text für Tag 1]" },
+  1:   { typ: "Dein Geburtstag hehe", bildtext: "Das wären deine Geschenke wenn ich mehr Geld hätte😪", text: "Ich wünsche dir alles gute und liebe zum Geburstag mein wunderschöner Schatz Mausi Engel!!!\n\nIch liebe dich über alles und für immer und das hier soll dich jeden Tag daran errinern❤️" },
   7:   { typ: "Eine Woche", bildtext: "Woche 1", text: "Schon eine Woche mit dieser Seite.\n\n[Dein persönlicher Text]" },
   30:  { typ: "Ein Monat", bildtext: "Monat 1", text: "Ein Monat voller kleiner Überraschungen.\n\n[Dein persönlicher Text]" },
   100: { typ: "Tag 100", bildtext: "100 Tage", text: "100 Tage. Danke, dass du dabei bist.\n\n[Dein persönlicher Text]" },
