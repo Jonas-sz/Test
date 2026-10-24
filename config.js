@@ -7,7 +7,7 @@ const ZUSAMMEN_SEIT = "2024-04-24";
 const GEBURTSTAG = "2005-10-24";
 
 // Name auf der Startseite
-const NAME = "Sarah";
+const NAME = "FÜR MEINE SARAH";
 
 // Sprüche, die beim Klick auf das Herz erscheinen (beliebig erweitern)
 const HERZ_SPRUECHE = [
