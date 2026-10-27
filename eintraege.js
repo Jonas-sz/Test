@@ -75,6 +75,11 @@ const BESONDERE_TAGE = {
 // ===== EIGENE EINTRÄGE (überschreiben alles andere) =====
 // Beispiel: PERSOENLICH[5] = { text: "Mein eigener Text", bildtext: "Unser Urlaub", bild: "bilder/urlaub.jpg" };
 const PERSOENLICH = {};
+PERSOENLICH[4] = {
+  typ: "Aufgabe",
+  bildtext: "Ich war schon immer neidisch auf deinen Biezeps",
+  text: "Beweise das du stärker bist als ich indem du dir eine Sportchallange ausdenkst, in der du gewinnst!.\n\nNeue Zeile mit \\n, Absatz mit zwei \\n."
+};
 
 // ===== 365 EINTRÄGE ZUSAMMENBAUEN =====
 const EINTRAEGE = (function () {
