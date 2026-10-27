@@ -81,6 +81,24 @@ PERSOENLICH[4] = {
   text: "Beweise das du stärker bist als ich indem du dir eine Sportchallange ausdenkst, in der du gewinnst!"
 };
 
+PERSOENLICH[5] = {
+  typ: "Aufgabe",
+  bildtext: "Ich war schon immer neidisch auf deinen Biezeps",
+  text: "Das ist ein Test1"
+};
+
+PERSOENLICH[6] = {
+  typ: "Aufgabe",
+  bildtext: "Ich war schon immer neidisch auf deinen Biezeps",
+  text: "Das ist ein Test2"
+};
+
+PERSOENLICH[7] = {
+  typ: "Aufgabe",
+  bildtext: "Ich war schon immer neidisch auf deinen Biezeps",
+  text: "Das ist ein Test3"
+};
+
 // ===== 365 EINTRÄGE ZUSAMMENBAUEN =====
 const EINTRAEGE = (function () {
   const liste = [];
