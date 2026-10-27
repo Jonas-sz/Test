@@ -78,7 +78,7 @@ const PERSOENLICH = {};
 PERSOENLICH[4] = {
   typ: "Aufgabe",
   bildtext: "Ich war schon immer neidisch auf deinen Biezeps",
-  text: "Beweise das du stärker bist als ich indem du dir eine Sportchallange ausdenkst, in der du gewinnst!.\n\nNeue Zeile mit \\n, Absatz mit zwei \\n."
+  text: "Beweise das du stärker bist als ich indem du dir eine Sportchallange ausdenkst, in der du gewinnst!"
 };
 
 // ===== 365 EINTRÄGE ZUSAMMENBAUEN =====
