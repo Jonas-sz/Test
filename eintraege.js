@@ -111,7 +111,7 @@ PERSOENLICH[6] = {
   text: "Ein Spieleabend (egal welches und egal wie oft)"
 };
 
-PERSOENLICH[] = {
+PERSOENLICH[8] = {
   typ: "typ",
   bildtext: "Bildtext?",
   text: "Text einfügen"
