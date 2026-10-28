@@ -99,6 +99,24 @@ PERSOENLICH[7] = {
   text: "Das ist ein Test3"
 };
 
+PERSOENLICH[6] = {
+  typ: "Gutschein",
+  bildtext: "Ein Gutschein für dich?",
+  text: "Ein Spieleabend (egal welches und egal wie oft)"
+};
+
+PERSOENLICH[6] = {
+  typ: "Gutschein",
+  bildtext: "Ein Gutschein für dich?",
+  text: "Ein Spieleabend (egal welches und egal wie oft)"
+};
+
+PERSOENLICH[6] = {
+  typ: "Gutschein",
+  bildtext: "Ein Gutschein für dich?",
+  text: "Ein Spieleabend (egal welches und egal wie oft)"
+};
+
 // ===== 365 EINTRÄGE ZUSAMMENBAUEN =====
 const EINTRAEGE = (function () {
   const liste = [];
